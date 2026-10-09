@@ -167,7 +167,7 @@ export const projects: Project[] = [
     ],
     metrics: [],
     github:
-      https://github.com/charangara03/AI-Driven-Multimodal-Healthcare-System.git
+      'https://github.com/charangara03/AI-Driven-Multimodal-Healthcare-System.git'
     palette: {
       from: '#2a0610',
       via: '#7a0f24',
