@@ -22,8 +22,8 @@ export const profile = {
   'Computer Science and Engineering graduate with knowledge of software development, web technologies, and Python. Interested in building user-friendly applications and learning new technologies. Eager to contribute skills and grow as a Software Developer',
   email: 'charangara173@gmail.com',
   phone: '+91 8074598359',
+  location: 'Tuni, Andhra Pradesh',
   links: {
-    location: 'Tuni, Andhra Pradesh',
     linkedin: 'https://www.linkedin.com/in/charangara',
     github: 'https://github.com/charangara03',
   },
