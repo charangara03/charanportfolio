@@ -11,7 +11,6 @@ import {
 certifications,
 education,
 profile,
-projects,
 type ProfileId,
 } from '../data/portfolio';
 
@@ -71,6 +70,7 @@ const textY = useTransform(scrollYProgress, [0, 1], ['0%', '-30%']);
 const fade = useTransform(scrollYProgress, [0, 0.75], [1, 0]);
 const blackout = useTransform(scrollYProgress, [0.35, 1], [0, 1]);
 
+// Desktop pointer parallax
 const mx = useMotionValue(0);
 const my = useMotionValue(0);
 
@@ -84,16 +84,13 @@ const chipX = useTransform(px, [-1, 1], [18, -18]);
 const chipY = useTransform(py, [-1, 1], [12, -12]);
 const glowX = useTransform(px, [-1, 1], ['-6%', '6%']);
 
-const startYear = education[0]?.period?.split(' – ')[0]?.split(' ')[1] ?? '2023';
-
 const meta = [
-"${startYear} – Present",
+'2023 – 2026',
 'Computer Science & Engineering',
-"${projects.length} Projects",
 "${certifications.length} Certifications",
 ];
 
-// Use verified portfolio data; do not access an empty achievements array.
+// Use available portfolio data; achievements may be empty.
 const floating = [
 {
 text: education[0]?.score ?? 'B.Tech CSE',
@@ -158,7 +155,7 @@ if (!fine) return;
     />
   </div>
 
-  {/* Profile portrait */}
+  {/* Portrait */}
   <motion.div
     className="absolute inset-x-0 top-12 z-[2] flex h-[64svh] items-end justify-center sm:h-[70svh] lg:bottom-0 lg:left-auto lg:right-[3vw] lg:top-20 lg:h-auto lg:w-[54vw] xl:right-[6vw] xl:w-[48vw]"
     style={{
@@ -212,7 +209,10 @@ if (!fine) return;
       {floating.map((f, i) => (
         <FloatChip
           key={f.text}
-          {...f}
+          text={f.text}
+          sub={f.sub}
+          pos={f.pos}
+          depth={f.depth}
           index={i}
           mx={chipX}
           my={chipY}
