@@ -19,8 +19,7 @@ export const profile = {
   role: 'Software Developer',
   tagline: ['Software Developer', 'Full-Stack Developer', 'AI Enthusiast'],
   intro:
-    'Computer Science and Engineering graduate focused on software development, web technologies, and AI-powered applications. Experienced in building responsive web applications and developing a brain tumor detection system using deep learning and computer vision.',
-  location: 'Tuni, Andhra Pradesh',
+  'Computer Science and Engineering graduate with knowledge of software development, web technologies, and Python. Interested in building user-friendly applications and learning new technologies. Eager to contribute skills and grow as a Software Developer',
   email: 'charangara173@gmail.com',
   phone: '+91 8074598359',
   links: {
