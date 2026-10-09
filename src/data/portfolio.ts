@@ -167,7 +167,7 @@ export const projects: Project[] = [
     ],
     metrics: [],
     github:
-      'https://github.com/DhruvaRaoAS/Multimodel-AI-HealthCare-System',
+       'https://github.com/charangara03/Multimodel-AI-HealthCare-System',
     palette: {
       from: '#2a0610',
       via: '#7a0f24',
