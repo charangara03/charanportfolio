@@ -158,7 +158,7 @@ style={{ x: glowX }}
       />
 
       <img
-    src="/charanportfolio/assets/myphoto.jpg.png"
+  src="/charanportfolio/assets/charanphoto.jpg.png"
         alt={profile.portrait.alt}
         sizes="(max-width: 1024px) 100vw, 54vw"
         onError={(e) => {
