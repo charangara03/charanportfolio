@@ -328,7 +328,7 @@ const y = useTransform(my, (n: number) => n * depth);
 
 return (
 <motion.div
-className={"glass absolute hidden rounded-xl px-4 py-2.5 md:block ${pos}"}
+className={`glass absolute hidden rounded-xl px-4 py-2.5 md:block ${pos}`}
 style={{ x, y }}
 initial={{ opacity: 0, filter: 'blur(6px)' }}
 animate={{ opacity: 1, filter: 'blur(0px)' }}
