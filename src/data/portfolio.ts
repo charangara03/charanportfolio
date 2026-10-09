@@ -23,6 +23,7 @@ export const profile = {
   email: 'charangara173@gmail.com',
   phone: '+91 8074598359',
   links: {
+    location: 'Tuni, Andhra Pradesh',
     linkedin: 'https://www.linkedin.com/in/charangara',
     github: 'https://github.com/charangara03',
   },
